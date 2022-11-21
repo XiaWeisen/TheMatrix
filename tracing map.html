@@ -1,0 +1,32 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+    body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;}
+    </style>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Q539nhs7Ie78cubqUDaNRRgSqTZKENHA"></script>
+<title>route</title>
+</head>
+<body>
+    <div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(-0.933085,51.460437);
+map.centerAndZoom(point, 20);
+var polyline = new BMap.Polyline([
+  new BMap.Point(-0.933,51.460386),
+  new BMap.Point(-0.93264,51.460283),
+  new BMap.Point(-0.932658,51.460283),
+  new BMap.Point(-0.932811,51.460238),
+  new BMap.Point(-0.932663,51.460184),
+  new BMap.Point(-0.932317,51.460229),
+  new BMap.Point(-0.932205,51.460429),
+  new BMap.Point(-0.932214,51.460577)
+], {strokeColor:"blue", strokeWeight:6, strokeOpacity:0.5});
+map.addOverlay(polyline);
+</script>
